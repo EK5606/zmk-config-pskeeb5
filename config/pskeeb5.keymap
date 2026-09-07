@@ -60,7 +60,7 @@
             layers = <0>;
         };
 
-        combo_alt+shift {
+        combo_alt_shift {
             bindings = <&kp LA(LEFT_SHIFT)>;
             key-positions = <13 12>;
             timeout-ms = <50>;
