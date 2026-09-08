@@ -108,7 +108,7 @@
             #binding-cells = <1>;
             bindings = <&kp>;
             release-after-ms = <1000>;
-            quick-realease;
+            quick-release;
             ignore-modifiers;
         };
     };
