@@ -102,6 +102,16 @@
 
             hold-trigger-key-positions = <1>;    // <---[[the W key]]
         };
+
+        skq : sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY_QUICK_RELEASE";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-realease;
+            ignore-modifiers;
+        };
     };
 
     keymap {
