@@ -119,6 +119,7 @@
             tapping-term-ms = <200>;
             bindings = <&skq LSHIFT>, <&kp LSHIFT>;
         };
+
         td_Rshift: tap_dance_right_shift {
             compatible = "zmk,behavior-tap-dance";
             label = "RSHIFT";
@@ -126,6 +127,7 @@
             tapping-term-ms = <200>;
             bindings = <&skq RSHIFT>, <&kp RSHIFT>;
         };
+
         td_Lgui: tap_dance_left_gui {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI";
@@ -133,6 +135,7 @@
             tapping-term-ms = <200>;
             bindings = <&skq LWIN>, <&kp LWIN>;
         };
+
         td_Rgui: tap_dance_right_gui {
             compatible = "zmk,behavior-tap-dance";
             label = "RGUI";
@@ -161,10 +164,10 @@
 
         num_layer {
             bindings = <
-&kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS     &trans  &trans            &trans      &trans          &trans
-&kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL     &trans  &skq RIGHT_SHIFT  &skq RCTRL  &skq RIGHT_GUI  &kp RIGHT_ALT
-&kp SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans  &trans            &trans      &trans          &trans
-&trans        &trans        &trans        &trans                              &trans            &trans      &trans          &trans
+&kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS     &trans  &trans      &trans      &trans    &trans
+&kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL     &trans  &skq RCTRL  &td_Rshift  &td_Rgui  &kp RIGHT_ALT
+&kp SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans  &trans      &trans      &trans    &trans
+&trans        &trans        &trans        &trans                              &trans      &trans      &trans    &trans
             >;
 
             label = "Numbers";
@@ -172,10 +175,10 @@
 
         function_layer {
             bindings = <
-&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4  &none  &kp F7  &kp F8  &kp F9  &kp F12
-&skq LEFT_ALT  &skq LEFT_GUI  &skq LCTRL    &skq LEFT_SHIFT  &bt BT_CLR    &none  &kp F4  &kp F5  &kp F6  &kp F11
-&none          &none          &none         &none            &none         &none  &kp F1  &kp F2  &kp F3  &kp F10
-&trans         &trans         &trans        &trans                                &trans  &trans  &trans  &trans
+&bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &kp F7  &kp F8  &kp F9  &kp F12
+&skq LEFT_ALT  &td_Lgui      &td_Lshift    &skq LCTRL    &bt BT_CLR    &none  &kp F4  &kp F5  &kp F6  &kp F11
+&none          &none         &none         &none         &none         &none  &kp F1  &kp F2  &kp F3  &kp F10
+&trans         &trans        &trans        &trans                             &trans  &trans  &trans  &trans
             >;
 
             label = "Function";
