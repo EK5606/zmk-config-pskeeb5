@@ -114,24 +114,28 @@
 
         td_Lshift: tap_dance_left_shift {
             compatible = "zmk,behavior-tap-dance";
+            label = "LSHIFT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&skq LSHIFT>, <&kp LSHIFT>;
         };
         td_Rshift: tap_dance_right_shift {
             compatible = "zmk,behavior-tap-dance";
+            label = "RSHIFT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&skq RSHIFT>, <&kp RSHIFT>;
         };
         td_Lgui: tap_dance_left_gui {
             compatible = "zmk,behavior-tap-dance";
+            label = "LGUI";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&skq LWIN>, <&kp LWIN>;
         };
         td_Rgui: tap_dance_right_gui {
             compatible = "zmk,behavior-tap-dance";
+            label = "RGUI";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&skq RWIN>, <&kp RWIN>;
