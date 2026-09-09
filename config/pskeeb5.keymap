@@ -115,6 +115,7 @@
         td_Lshift: tap_dance_left_shift {
             compatible = "zmk,behavior-tap-dance";
             label = "LSHIFT";
+            display-name = "td_Lshift";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&skq LSHIFT>, <&kp LSHIFT>;
@@ -123,6 +124,7 @@
         td_Rshift: tap_dance_right_shift {
             compatible = "zmk,behavior-tap-dance";
             label = "RSHIFT";
+            display-name = "td_Rshift";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&skq RSHIFT>, <&kp RSHIFT>;
@@ -131,6 +133,7 @@
         td_Lgui: tap_dance_left_gui {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI";
+            display-name = "td_Lsuper";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&skq LWIN>, <&kp LWIN>;
@@ -139,6 +142,7 @@
         td_Rgui: tap_dance_right_gui {
             compatible = "zmk,behavior-tap-dance";
             label = "RGUI";
+            display-name = "td_Rsuper";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&skq RWIN>, <&kp RWIN>;
