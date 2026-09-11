@@ -149,7 +149,7 @@
             label = "TD_NUM_LAYER1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&to 4>, <&to 0>;
+            bindings = <&to 3>, <&to 0>;
         };
 
         td_numLayer2: tap_dance_num_layer2 {
@@ -157,7 +157,7 @@
             label = "TD_NUM_LAYER2";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&to 0>, <&to 4>;
+            bindings = <&to 0>, <&to 3>;
         };
     };
 
