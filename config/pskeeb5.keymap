@@ -4,12 +4,16 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT 0
-#define NAV     1
-#define SYM     2
-#define FUNC    3
-#define MEDIA   4
-#define MOUSE   5
-#define WINNAV  6
+#define NUM1    1
+#define NUM2    2
+#define ZH_CN   3
+#define SYM     4
+#define FUNC    5
+#define NAV     6
+// #define SYM     2
+// #define MEDIA   4
+// #define MOUSE   5
+// #define WINNAV  6
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
