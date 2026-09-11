@@ -154,7 +154,7 @@
             label = "TD_NUM_LAYER1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&to 3>, <&to 0>;
+            bindings = <&to 2>, <&to 0>;
         };
 
         td_numLayer2: tap_dance_num_layer2 {
@@ -162,7 +162,7 @@
             label = "TD_NUM_LAYER2";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&to 0>, <&to 3>;
+            bindings = <&to 0>, <&to 2>;
         };
     };
 
@@ -194,6 +194,16 @@
             label = "Numbers1";
         };
 
+        chinese_layer {
+            label = "Chinese";
+            bindings = <
+&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &trans  &trans      &trans          &trans        &trans
+&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &trans  &skq RCTRL  &td_rightShift  &td_rightGui  &kp RIGHT_ALT
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans  &trans      &trans          &trans        &trans
+&trans  &trans        &to 3         &kp SPACE                           &trans      &trans          &trans        &trans
+            >;
+        };
+
         num_layer2 {
             label = "Numbers2";
             bindings = <
@@ -204,23 +214,13 @@
             >;
         };
 
-        chinese_layer {
-            label = "Chinese";
-            bindings = <
-&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &trans  &trans      &trans          &trans        &trans
-&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &trans  &skq RCTRL  &td_rightShift  &td_rightGui  &kp RIGHT_ALT
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans  &trans      &trans          &trans        &trans
-&trans  &trans        &to 2         &kp SPACE                           &trans      &trans          &trans        &trans
-            >;
-        };
-
         symbol_layer {
             label = "Symbols";
             bindings = <
 &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE       &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp BACKSLASH
 &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES
 &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SINGLE_QUOTE
-&trans           &trans         &mo 5             &trans                                         &trans                &mo 2                  &trans         &trans
+&trans           &trans         &mo 5             &trans                                         &trans                &mo 3                  &trans         &trans
             >;
 
             sensor-bindings =
