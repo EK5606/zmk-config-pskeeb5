@@ -5,8 +5,8 @@
 
 #define DEFAULT 0
 #define NUM1    1
-#define NUM2    2
-#define ZH_CN   3
+#define ZH_CN   2
+#define NUM2    3
 #define SYM     4
 #define FUNC    5
 #define NAV     6
