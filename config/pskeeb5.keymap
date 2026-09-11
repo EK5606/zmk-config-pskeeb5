@@ -112,7 +112,7 @@
             ignore-modifiers;
         };
 
-        td_Lshift: tap_dance_left_shift {
+        td_leftShift: tap_dance_left_shift {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LSHIFT";
             #binding-cells = <0>;
@@ -120,7 +120,7 @@
             bindings = <&skq LSHIFT>, <&kp LSHIFT>;
         };
 
-        td_Rshift: tap_dance_right_shift {
+        td_rightShift: tap_dance_right_shift {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_RSHIFT";
             #binding-cells = <0>;
@@ -128,7 +128,7 @@
             bindings = <&skq RSHIFT>, <&kp RSHIFT>;
         };
 
-        td_Lgui: tap_dance_left_gui {
+        td_leftGui: tap_dance_left_gui {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LGUI";
             #binding-cells = <0>;
@@ -136,14 +136,31 @@
             bindings = <&skq LWIN>, <&kp LWIN>;
         };
 
-        td_Rgui: tap_dance_right_gui {
+        td_rightGui: tap_dance_right_gui {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_RGUI";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&skq RWIN>, <&kp RWIN>;
         };
+
+        td_numLayer1: tap_dance_num_layer1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_NUM_LAYER1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&to 4>, <&to 0>;
+        };
+
+        td_numLayer2: tap_dance_num_layer2{
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_NUM_LAYER2";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&to 0>, <&to 4>;
+        };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
