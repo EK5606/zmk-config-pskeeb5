@@ -10,6 +10,7 @@
 #define SYM     4
 #define FUNC    5
 #define NAV     6
+
 // #define SYM     2
 // #define MEDIA   4
 // #define MOUSE   5
@@ -229,10 +230,10 @@
 
         function_layer {
             bindings = <
-&bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4  &none  &kp F7  &kp F8  &kp F9  &kp F12
-&skq LEFT_ALT  &td_leftGui   &td_leftShift  &skq LCTRL    &bt BT_CLR    &none  &kp F4  &kp F5  &kp F6  &kp F11
-&none          &none         &none          &none         &none         &none  &kp F1  &kp F2  &kp F3  &kp F10
-&trans         &trans        &mo 6          &trans                             &trans  &trans  &trans  &trans
+&bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4  &kp KP_NUMLOCK  &kp F7  &kp F8  &kp F9  &kp F12
+&skq LEFT_ALT  &td_leftGui   &td_leftShift  &skq LCTRL    &bt BT_CLR    &none           &kp F4  &kp F5  &kp F6  &kp F11
+&none          &none         &none          &none         &none         &none           &kp F1  &kp F2  &kp F3  &kp F10
+&trans         &trans        &mo 6          &trans                                      &trans  &trans  &trans  &trans
             >;
 
             label = "Function";
