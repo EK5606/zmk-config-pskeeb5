@@ -4,12 +4,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT 0
-#define NUM1    1
-#define ZH_CN   2
-#define NUM2    3
-#define SYM     4
-#define FUNC    5
-#define NAV     6
+#define ZH_CN   1
+#define NUM1    2
+#define SYM     3
+#define FUNC    4
+#define NAV     5
 
 // #define SYM     2
 // #define MEDIA   4
@@ -149,20 +148,13 @@
             bindings = <&skq RWIN>, <&kp RWIN>;
         };
 
-        td_numLayer1: tap_dance_num_layer1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_NUM_LAYER1";
-            #binding-cells = <0>;
+        mtl: momentary_toggle_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_MO_TAP_TOG";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&to 2>, <&to 0>;
-        };
-
-        td_numLayer2: tap_dance_num_layer2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_NUM_LAYER2";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&to 0>, <&to 2>;
+            bindings = <&mo>, <&tog>;
         };
     };
 
