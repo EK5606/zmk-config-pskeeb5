@@ -23,49 +23,8 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <16 17>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <0 1>;
-            require-prior-idle-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_ctrl_backspace {
-            bindings = <&kp RC(BACKSPACE)>;
-            key-positions = <22 23>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <28 27>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_ctrl_shift {
-            bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <20 21>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <12 13>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_alt_shift {
-            bindings = <&kp LA(LEFT_SHIFT)>;
             key-positions = <13 12>;
+            layers = <0 1>;
             timeout-ms = <50>;
         };
     };
@@ -164,10 +123,10 @@
         default_layer {
             label = "Default";
             bindings = <
-&kp Q             &kp W          &kp E  &kp R      &kp T  &kp Y  &kp U       &kp I      &kp O    &kp P
-&kp A             &kp S          &kp D  &kp F      &kp G  &kp H  &kp J       &kp K      &kp L    &kp SEMICOLON
-&kp Z             &kp X          &kp C  &kp V      &kp B  &kp N  &kp M       &kp COMMA  &kp DOT  &kp FSLH
-&kp C_PLAY_PAUSE  &kp BACKSPACE  &to 1  &kp SPACE                &kp ESCAPE  &sl 3      &none    &kp C_MUTE
+&kp Q             &kp W          &kp E     &kp R      &kp T  &kp Y  &kp U       &kp I      &kp O    &kp P
+&kp A             &kp S          &kp D     &kp F      &kp G  &kp H  &kp J       &kp K      &kp L    &kp SEMICOLON
+&kp Z             &kp X          &kp C     &kp V      &kp B  &kp N  &kp M       &kp COMMA  &kp DOT  &kp FSLH
+&kp C_PLAY_PAUSE  &kp BACKSPACE  &mtl 2 1  &kp SPACE                &kp ESCAPE  &sl 3      &none    &kp C_MUTE
             >;
 
             sensor-bindings =
@@ -175,25 +134,25 @@
                 <&inc_dec_kp C_NEXT C_PREVIOUS>;
         };
 
+        chinese_layer {
+            label = "Chinese";
+            bindings = <
+&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &trans  &trans          &trans          &trans        &trans
+&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans  &trans          &trans          &trans        &trans
+&trans  &trans        &trans        &trans                              &trans          &to 5           &trans        &trans
+            >;
+        };
+
         num_layer1 {
             bindings = <
 &kp PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS        &trans  &trans      &trans          &trans        &trans
 &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL        &trans  &skq RCTRL  &td_rightShift  &td_rightGui  &kp RIGHT_ALT
 &kp SLASH     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &trans  &trans      &trans          &trans        &trans
-&trans        &trans           &none            &kp ENTER                                 &trans      &mo 5           &trans        &trans
+&trans        &trans           &none            &trans                                    &trans      &mo 4           &trans        &trans
             >;
 
             label = "Numbers1";
-        };
-
-        chinese_layer {
-            label = "Chinese";
-            bindings = <
-&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &trans  &trans      &trans          &trans        &trans
-&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &trans  &skq RCTRL  &td_rightShift  &td_rightGui  &kp RIGHT_ALT
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans  &trans      &trans          &trans        &trans
-&trans  &trans        &none         &kp SPACE                           &trans      &sl 3           &trans        &trans
-            >;
         };
 
         symbol_layer {
