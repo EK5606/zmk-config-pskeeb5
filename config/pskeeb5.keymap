@@ -112,7 +112,7 @@
             label = "TD_LGUI";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&skq LWIN>, <&kp LWIN>;
+            bindings = <&sk_q LWIN>, <&kp LWIN>;
         };
 
         td_rightGui: tap_dance_right_gui {
@@ -120,7 +120,7 @@
             label = "TD_RGUI";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&skq RWIN>, <&kp RWIN>;
+            bindings = <&sk_q RWIN>, <&kp RWIN>;
         };
 
         td_shift_caps: td_shift_capsword {
