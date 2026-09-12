@@ -81,6 +81,16 @@
             ignore-modifiers;
         };
 
+        sk_q: sticky_key_gui {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY_GUI";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            lazy;
+            ignore-modifiers;
+        };
+
         td_leftShift: tap_dance_left_shift {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LSHIFT";
