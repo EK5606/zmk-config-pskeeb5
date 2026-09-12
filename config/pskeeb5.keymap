@@ -29,18 +29,19 @@
             timeout-ms = <50>;
         };
 
-        combo_nav_layer {
-            bindings = <&to 5>;
-            key-positions = <36 35>;
-            timeout-ms = <50>;
-        };
-
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <1 0>;
             timeout-ms = <50>;
             layers = <0 1 2>;
         };
+
+        combo_nav_layer {
+            bindings = <&to 5>;
+            key-positions = <36 35>;
+            timeout-ms = <50>;
+        };
+
     };
 };
 
