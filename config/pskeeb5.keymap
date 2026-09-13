@@ -192,10 +192,10 @@
         symbol_layer {
             label = "Symbols";
             bindings = <
-&kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE       &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp BACKSLASH
-&kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES
-&kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SINGLE_QUOTE
-&trans           &trans         &mo 4             &trans                                         &trans                &mo 4                  &trans         &trans
+&kp GRAVE        &kp QUESTION  &kp COLON         &kp MINUS          &kp PIPE       &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp BACKSLASH
+&kp EXCLAMATION  &kp ASTERISK  &kp SLASH         &kp EQUAL          &kp AMPERSAND  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp DOUBLE_QUOTES
+&kp TILDE        &kp PLUS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp AT_SIGN  &kp MINUS             &kp LESS_THAN          &kp GREATER_THAN  &kp SINGLE_QUOTE
+&trans           &trans        &mo 4             &trans                                         &trans                &mo 4                  &trans            &trans
             >;
 
             sensor-bindings =
