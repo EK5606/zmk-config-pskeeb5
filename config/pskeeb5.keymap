@@ -16,7 +16,7 @@
 // #define MOUSE   5
 // #define WINNAV  6
 
-&caps_word { continue-list = <UNDERSCORE MINUS>; };
+&caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>; };
 
 / {
     combos {
