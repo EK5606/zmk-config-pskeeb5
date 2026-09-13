@@ -205,10 +205,10 @@
 
         function_layer {
             bindings = <
-&bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    &kp KP_NUMLOCK  &kp F7  &kp F8  &kp F9  &kp F12
-&skq LEFT_ALT  &td_leftGui     &td_leftShift  &skq LCTRL    &skq RIGHT_ALT  &none           &kp F4  &kp F5  &kp F6  &kp F11
-&bootloader    &studio_unlock  &sys_reset     &out OUT_TOG  &bt BT_CLR      &none           &kp F1  &kp F2  &kp F3  &kp F10
-&trans         &trans          &mo 5          &trans                                        &trans  &trans  &trans  &trans
+&bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    &kp KP_NUMLOCK   &kp F7  &kp F8  &kp F9  &kp F12
+&skq LEFT_ALT  &td_leftGui     &td_leftShift  &skq LCTRL    &skq RIGHT_ALT  &kp PRINTSCREEN  &kp F4  &kp F5  &kp F6  &kp F11
+&bootloader    &studio_unlock  &sys_reset     &out OUT_TOG  &bt BT_CLR      &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10
+&trans         &trans          &mo 5          &trans                                         &trans  &trans  &trans  &trans
             >;
 
             label = "Function";
